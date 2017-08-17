@@ -1,0 +1,9 @@
+<div>
+	<p>{{vm.hora | date:'HH:mm:ss'}}</p>
+
+	<textarea ng-model="vm.texto" 
+			  ng-keyup="vm.contador()" 
+			  ng-style="{background: vm.style}"
+			  placeholder="Escribe tu texto aqui"></textarea>
+	<span> {{vm.texto.length}} / 120</span>
+</div>
